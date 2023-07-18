@@ -13,23 +13,22 @@ const database = {
   ],
   villains: [
     {
-        id: 1,
-        name: "Luigi"
-        power: "Super strength"
+      id: 1,
+      name: "Luigi",
+      power: "Super strength",
     },
     {
-        id: 2,
-        name: "Mike"
-        power: "Pointing out that you have coffee breath"
+      id: 2,
+      name: "Mike",
+      power: "Pointing out that you have coffee breath",
     },
-  ]
+  ],
 };
-
 
 export const getHeroes = () => {
   return database.heroes.map((hero) => ({ ...hero }));
 };
 
 export const getVillains = () => {
-    return database.villains.map(villain => ({...villain}))
-}
+  return database.villains.map((villain) => ({ ...villain }));
+};
